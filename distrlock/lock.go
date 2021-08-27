@@ -2,7 +2,7 @@ package distrlock
 
 import (
 	"github.com/bsm/redislock"
-	"gogs.iotopo.com/iotopo/iotopo-sdk-go/cache"
+	"github.com/iotopo/iotopo-sdk-go/cache"
 )
 
 var (

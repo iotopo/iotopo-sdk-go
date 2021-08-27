@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"gogs.iotopo.com/iotopo/iotopo-sdk-go/broker"
-	"gogs.iotopo.com/iotopo/iotopo-sdk-go/example/rpc/helloworld"
+	"github.com/iotopo/iotopo-sdk-go/broker"
+	"github.com/iotopo/iotopo-sdk-go/example/rpc/helloworld"
 
 	// This is the package containing the generated *.pb.go and *.nrpc.go
 	// files.

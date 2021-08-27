@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	redisCache "github.com/go-redis/cache/v8"
-	"gogs.iotopo.com/iotopo/iotopo-sdk-go/cache"
+	"github.com/iotopo/iotopo-sdk-go/cache"
 	"log"
 	"time"
 )

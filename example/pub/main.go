@@ -1,6 +1,6 @@
 package main
 
-import "gogs.iotopo.com/iotopo/iotopo-sdk-go/broker"
+import "github.com/iotopo/iotopo-sdk-go/broker"
 
 func main() {
 	defer broker.Stop()

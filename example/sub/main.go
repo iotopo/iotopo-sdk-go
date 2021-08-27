@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/nats-io/nats.go"
-	"gogs.iotopo.com/iotopo/iotopo-sdk-go/broker"
+	"github.com/iotopo/iotopo-sdk-go/broker"
 	"log"
 	"os"
 	"os/signal"

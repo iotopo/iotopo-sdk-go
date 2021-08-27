@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"gogs.iotopo.com/iotopo/iotopo-sdk-go/cache"
-	"gogs.iotopo.com/iotopo/iotopo-sdk-go/distrlock"
+	"github.com/iotopo/iotopo-sdk-go/cache"
+	"github.com/iotopo/iotopo-sdk-go/distrlock"
 	"log"
 	"os"
 	"os/signal"
