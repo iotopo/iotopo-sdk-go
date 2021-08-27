@@ -9,6 +9,7 @@ import (
 )
 
 var conn *nats.Conn
+var encodedConn *nats.EncodedConn
 
 func init() {
 	natsURL := os.Getenv("TP_NATS_ADDR")
@@ -50,6 +51,12 @@ func init() {
 		panic(err)
 	}
 	conn = nc
+
+	ec, err := nats.NewEncodedConn(nc, nats.JSON_ENCODER)
+	if err != nil {
+		panic(err)
+	}
+	encodedConn = ec
 }
 
 func Stop() {
@@ -62,3 +69,6 @@ func GetConn() *nats.Conn {
 	return conn
 }
 
+func GetEncodedConn() *nats.EncodedConn {
+	return encodedConn
+}
