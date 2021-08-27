@@ -14,20 +14,21 @@
 
 syntax = "proto3";
 
-option java_multiple_files = true;
-option java_package = "io.grpc.examples.helloworld";
-option java_outer_classname = "HelloWorldProto";
-
 import "nrpc.proto";
-
 package helloworld;
 
-option go_package = "github.com/nats-rpc/nrpc/examples/helloworld/helloworld";
+//option java_multiple_files = true;
+//option java_package = "io.grpc.examples.helloworld";
+//option java_outer_classname = "HelloWorldProto";
+// protoc --proto_path=example/rpc/ --go_out=. --nrpc_out=. helloworld.proto
+option go_package = "example/rpc/helloworld";
+option (nrpc.packageSubject) = "helloworld";
 
 // The greeting service definition.
 service Greeter {
-  // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
+    // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {
+  }
 }
 
 // The request message containing the user's name.

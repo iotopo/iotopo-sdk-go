@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"gogs.iotopo.com/iotopo/iotopo-sdk-go/broker"
+	"gogs.iotopo.com/iotopo/iotopo-sdk-go/example/rpc/helloworld"
+
 	// This is the package containing the generated *.pb.go and *.nrpc.go
 	// files.
-	"gogs.iotopo.com/iotopo/iotopo-sdk-go/example/rpc/helloworld"
 	"log"
 )
 
